@@ -33,7 +33,7 @@ This project is a backend API for an educational platform, enabling users to man
 ### Steps to Setup
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/19Kapil/19Kapil-Backend-Development-Challenge-Educational-Platform-API.git
+   git clone https://github.com/19Kapil/Backend-Development-Challenge-Educational-Platform-API.git
    cd Backend Development Challenge -Educational Platform API
    ```
 
