@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "967739cb-db77-46e1-9345-c21ca850c7a7",
+		"name": "TASK FOR  BACKEND INTERN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34400904"
+	},
+	"item": [
+		{
+			"name": "create courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Intro to Express\",\r\n  \"description\": \"A comprehensive course on building APIs with Express.js.\",\r\n  \"duration\": 10,\r\n  \"instructorName\": \"John Doe\",\r\n  \"language\": \"English\",\r\n  \"level\": \"Beginner\",\r\n  \"price\": 50\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/courses/676976ce562eb21bd55c0e85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"676976ce562eb21bd55c0e85"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update course",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Advanced Python\",\r\n    \"description\": \"Master Python programming.\",\r\n    \"price\": 150,\r\n    \"level\": \"Advanced\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/courses/676976ce562eb21bd55c0e85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"676976ce562eb21bd55c0e85"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/courses/676976ce562eb21bd55c0e85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"676976ce562eb21bd55c0e85"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create quize",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"questions\": [\r\n    {\r\n      \"question\": \"What is Python?\",\r\n      \"options\": [\r\n        \"A programming language\",\r\n        \"A web framework\",\r\n        \"A type of database\",\r\n        \"A version control system\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    },\r\n    {\r\n      \"question\": \"What is a list in Python?\",\r\n      \"options\": [\r\n        \"A mutable sequence of elements\",\r\n        \"An immutable sequence of elements\",\r\n        \"A function\",\r\n        \"A type of class\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    },\r\n    {\r\n      \"question\": \"Which of the following is the correct way to define a function in Python?\",\r\n      \"options\": [\r\n        \"function myFunction():\",\r\n        \"def myFunction():\",\r\n        \"func myFunction()\",\r\n        \"def: myFunction()\"\r\n      ],\r\n      \"correctAnswer\": \"B\"\r\n    },\r\n    {\r\n      \"question\": \"What does the 'self' keyword represent in Python?\",\r\n      \"options\": [\r\n        \"A reference to the current object\",\r\n        \"A reference to a class\",\r\n        \"A built-in Python function\",\r\n        \"A global variable\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    },\r\n    {\r\n      \"question\": \"Which of the following is used to create a new Python module?\",\r\n      \"options\": [\r\n        \"def\",\r\n        \"import\",\r\n        \"module\",\r\n        \"class\"\r\n      ],\r\n      \"correctAnswer\": \"B\"\r\n    },\r\n    {\r\n      \"question\": \"How do you declare a variable in Python?\",\r\n      \"options\": [\r\n        \"var x = 10\",\r\n        \"x = 10\",\r\n        \"declare x = 10\",\r\n        \"int x = 10\"\r\n      ],\r\n      \"correctAnswer\": \"B\"\r\n    },\r\n    {\r\n      \"question\": \"What is the purpose of the 'lambda' keyword in Python?\",\r\n      \"options\": [\r\n        \"To define an anonymous function\",\r\n        \"To create a new variable\",\r\n        \"To initialize a class\",\r\n        \"To create a for loop\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    },\r\n    {\r\n      \"question\": \"Which built-in data type is used to store multiple values in Python?\",\r\n      \"options\": [\r\n        \"List\",\r\n        \"String\",\r\n        \"Integer\",\r\n        \"Boolean\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    },\r\n    {\r\n      \"question\": \"Which of the following will raise a SyntaxError in Python?\",\r\n      \"options\": [\r\n        \"if x == 10:\",\r\n        \"if x == 10\",\r\n        \"if (x == 10)\",\r\n        \"if x = 10:\"\r\n      ],\r\n      \"correctAnswer\": \"D\"\r\n    },\r\n    {\r\n      \"question\": \"What does the 'break' statement do in a loop?\",\r\n      \"options\": [\r\n        \"Exits the loop\",\r\n        \"Continues to the next iteration\",\r\n        \"Stops the program\",\r\n        \"Exits the function\"\r\n      ],\r\n      \"correctAnswer\": \"A\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/courses/676976ce562eb21bd55c0e85/quizzes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"676976ce562eb21bd55c0e85",
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get quize by course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/courses/676962e7ffc24da4e8949b1c/quizzes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"courses",
+						"676962e7ffc24da4e8949b1c",
+						"quizzes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a specific quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/quizzes/676a621ea51c16f4b465ff9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"quizzes",
+						"676a621ea51c16f4b465ff9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a quiz",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questions\": [\r\n        {\r\n            \"question\": \"What is React?\",\r\n            \"options\": [\r\n                \"A database management system\",\r\n                \"A JavaScript library for building user interfaces\",\r\n                \"A backend framework\",\r\n                \"A CSS preprocessor\"\r\n            ],\r\n            \"correctAnswer\": \"A JavaScript library for building user interfaces\"\r\n        },\r\n        {\r\n            \"question\": \"What is the purpose of JSX in React?\",\r\n            \"options\": [\r\n                \"To write HTML inside JavaScript\",\r\n                \"To connect React to the database\",\r\n                \"To create REST APIs\",\r\n                \"To optimize JavaScript performance\"\r\n            ],\r\n            \"correctAnswer\": \"To write HTML inside JavaScript\"\r\n        },\r\n        {\r\n            \"question\": \"Which method is used to create components in React?\",\r\n            \"options\": [\r\n                \"render()\",\r\n                \"createComponent()\",\r\n                \"React.createElement()\",\r\n                \"componentDidMount()\"\r\n            ],\r\n            \"correctAnswer\": \"React.createElement()\"\r\n        },\r\n        {\r\n            \"question\": \"What is the virtual DOM in React?\",\r\n            \"options\": [\r\n                \"A copy of the real DOM kept in memory\",\r\n                \"A feature to directly modify the real DOM\",\r\n                \"A database for storing React components\",\r\n                \"An abstraction of server-side rendering\"\r\n            ],\r\n            \"correctAnswer\": \"A copy of the real DOM kept in memory\"\r\n        },\r\n        {\r\n            \"question\": \"What is a key in React?\",\r\n            \"options\": [\r\n                \"A unique identifier for React elements\",\r\n                \"A function to handle state updates\",\r\n                \"A reference to a parent component\",\r\n                \"A feature for server-side rendering\"\r\n            ],\r\n            \"correctAnswer\": \"A unique identifier for React elements\"\r\n        },\r\n        {\r\n            \"question\": \"Which hook is used to manage state in a functional component?\",\r\n            \"options\": [\r\n                \"useState\",\r\n                \"useEffect\",\r\n                \"useReducer\",\r\n                \"useContext\"\r\n            ],\r\n            \"correctAnswer\": \"useState\"\r\n        },\r\n        {\r\n            \"question\": \"What is the purpose of the useEffect hook?\",\r\n            \"options\": [\r\n                \"To manage side effects in functional components\",\r\n                \"To define styles for components\",\r\n                \"To handle errors in React\",\r\n                \"To create new components dynamically\"\r\n            ],\r\n            \"correctAnswer\": \"To manage side effects in functional components\"\r\n        },\r\n        {\r\n            \"question\": \"How do you pass data to a child component in React?\",\r\n            \"options\": [\r\n                \"Using props\",\r\n                \"Using state\",\r\n                \"Using context\",\r\n                \"Using events\"\r\n            ],\r\n            \"correctAnswer\": \"Using props\"\r\n        },\r\n        {\r\n            \"question\": \"What is a higher-order component (HOC) in React?\",\r\n            \"options\": [\r\n                \"A component that renders another component\",\r\n                \"A built-in hook for managing complex states\",\r\n                \"A special type of class component\",\r\n                \"A component with multiple render methods\"\r\n            ],\r\n            \"correctAnswer\": \"A component that renders another component\"\r\n        },\r\n        {\r\n            \"question\": \"What is the default port for a React development server?\",\r\n            \"options\": [\r\n                \"3000\",\r\n                \"8080\",\r\n                \"5000\",\r\n                \"4200\"\r\n            ],\r\n            \"correctAnswer\": \"3000\"\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/quizzes/676a621ea51c16f4b465ff9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"quizzes",
+						"676a621ea51c16f4b465ff9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a quiz",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/quizzes/676a621ea51c16f4b465ff9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"quizzes",
+						"676a621ea51c16f4b465ff9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "submit answer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quizId\": \"676a6fcb3f2f817b23e685ac\",  \r\n  \"userAnswers\": [\r\n    \"A JavaScript library for building user interfaces\",  \r\n    \"To create REST APIs\",\r\n    \"React.createElement()\"\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/quizzes/676a6fcb3f2f817b23e685ac/quizresults",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"quizzes",
+						"676a6fcb3f2f817b23e685ac",
+						"quizresults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/quizresults/676a810a1a90fdad1f9e8ece",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"quizresults",
+						"676a810a1a90fdad1f9e8ece"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
