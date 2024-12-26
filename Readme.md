@@ -33,8 +33,8 @@ This project is a backend API for an educational platform, enabling users to man
 ### Steps to Setup
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/educational-platform-api.git
-   cd educational-platform-api
+   git clone https://github.com/19Kapil/19Kapil-Backend-Development-Challenge-Educational-Platform-API.git
+   cd Backend Development Challenge -Educational Platform API
    ```
 
 2. **Install Dependencies**
@@ -86,5 +86,5 @@ This project is a backend API for an educational platform, enabling users to man
 
 ## Contact
 For questions or feedback, reach out at:
-- **Email:** parazulikapil777@gmail.com
+**Email:** parazulikapil777@gmail.com
 
