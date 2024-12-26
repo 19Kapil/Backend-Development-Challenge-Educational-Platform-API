@@ -2,6 +2,7 @@
 
 ## Overview
 
+This project is a backend API for an educational platform, enabling users to manage courses and quizzes. It provides CRUD functionality for both courses and quizzes, adheres to RESTful principles, and includes endpoints for quiz-taking functionality.
 ---
 
 ## Features
